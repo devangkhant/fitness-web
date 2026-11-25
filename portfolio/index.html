@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marriage Biodata - Khant Devang</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #fdfaf5;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 40px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .biodata-container {
+            background: #ffffff;
+            width: 850px;
+            padding: 50px;
+            border: 3px double #b8860b;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Top Corner Ornament */
+        .biodata-container::before {
+            content: "⚜";
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #b8860b;
+            font-size: 30px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            margin-top: 10px;
+        }
+
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 45px;
+            color: #8b0000;
+            margin: 0;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+        }
+
+        .main-layout {
+            display: flex;
+            gap: 50px;
+        }
+
+        .photo-side {
+            flex: 0 0 280px;
+            text-align: center;
+        }
+
+        .photo-side img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            border: 6px solid #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            outline: 1px solid #b8860b;
+        }
+
+        .details-side {
+            flex: 1;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 24px;
+            color: #8b0000;
+            border-bottom: 2px solid #f0e6d2;
+            margin: 30px 0 15px 0;
+            padding-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .info-row {
+            display: flex;
+            margin-bottom: 12px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .label {
+            width: 180px;
+            font-weight: 600;
+            color: #5d4037;
+        }
+
+        .value {
+            flex: 1;
+            color: #2c3e50;
+        }
+
+        .footer-text {
+            text-align: center;
+            margin-top: 60px;
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: #b8860b;
+            font-size: 20px;
+        }
+
+        /* Print Settings */
+        .btn-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+
+        .print-btn {
+            background: #8b0000;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        @media print {
+            .btn-container {
+                display: none;
+            }
+
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .biodata-container {
+                box-shadow: none;
+                width: 100%;
+                border: 3px double #b8860b;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="btn-container">
+        <button class="print-btn" onclick="window.print()">Download PDF</button>
+    </div>
+
+    <div class="biodata-container">
+        <header>
+            <h1>Biodata</h1>
+        </header>
+
+        <div class="main-layout">
+            <h2 style="font-family: 'Playfair Display'; color: #8b0000; margin-top: 20px;">Jaypal Khant</h2>
+        </div>
+
+        <div class="details-side">
+            <div class="section-title">Personal Details</div>
+            <div class="info-row">
+                <span class="label">Full Name</span>
+                <span class="value">: Khant Jaypalsinh Ranjitsinh</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Date of Birth</span>
+                <span class="value">: 28th August, 2004</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Education</span>
+                <span class="value">: B.E. Power Electronics Engineering(2nd year running)</span>
+            </div>
+
+            <div class="section-title">Family Details</div>
+            <div class="info-row">
+                <span class="label">Father's Name</span>
+                <span class="value">: Khant Ranjitsinh Pratapsinh</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Mother's Name</span>
+                <span class="value">: Khant Kailashben Ranjitsinh</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Native Village</span>
+                <span class="value">: Sariya</span>
+            </div>
+
+            <div class="info-row">
+                <span class="label">Current Place</span>
+                <span class="value">: Vastral, Ahmedabad - 382418</span>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
